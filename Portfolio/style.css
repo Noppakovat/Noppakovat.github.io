@@ -7,9 +7,9 @@ html{
 
 /* Background gradient */
 body {
-    background: linear-gradient(-65deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 2000%;
-    animation: gradient 15s ease infinite;
+    background: linear-gradient(-65deg, #96d2f3, #96a3f3, #b896f3);
+    background-size: 2000% 2000%;
+    animation: gradient 20s ease infinite;
     font-family: Questrial, sans-serif;
     width: 800px;
     min-width: 800px;
@@ -37,8 +37,17 @@ body {
 }
 
 span {
+    color: #231026;
+}
+.spanPurpleBold {
     color: #4f284b;
     font-weight: bolder;
+}
+.indent {
+    padding-left: 2vw;
+}
+.abouttitle {
+    text-align: center;
 }
 
 h2 {
@@ -48,7 +57,8 @@ h2 {
 }
 h3 {
     font-size: 1.2vw;
-    background-color: #d8bfd8; /* Thistle */
+    background-image: linear-gradient(to right, #b29fc5, #c59fb2, #b2c59f, #9fc5b2); 
+    border-radius: 1vw;
 }
 h4 {
     font-size: .9vw;
@@ -62,13 +72,22 @@ h2, h3, h4, h5, h6 {
     padding:0;
 }
 
+.boxHeader {
+    text-indent: .5vw;
+    text-transform: uppercase;
+    letter-spacing: -.1vw;
+}
+
 .content {
     background: white;
     height: 60vh;
-    width: 55vw;
-    border-radius: 5em;
-    border-style: groove;
-    padding: 3em;
+    width: 50vw;
+    border-top-left-radius: 8vw;
+    border-top-right-radius: 8vw;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    border-style: none;
+    padding: 2em;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -84,23 +103,28 @@ h2, h3, h4, h5, h6 {
     display: none;
 }
 
-.topheader {
-    display: inline; 
+h1.topHead {
+    position: absolute;
     color: #1F1E2B; 
     font-family: Love Light, sans-serif; 
-    font-size: 12vh; 
-    font-weight: bolder; 
-    position: relative;
-    top: 8vh;
-    vertical-align: top;
+    font-size: 6vw; 
+    font-weight: bolder;
+    top: 11.75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Style the tab */
 .tab {
-    position: relative;
+    position: absolute;
+    display: inline-flex;
     overflow: hidden;
     border: none;
     background-color: none;
+    top: 18.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
 }
 
 /* Style the buttons inside the tab */
@@ -108,13 +132,14 @@ h2, h3, h4, h5, h6 {
     background-color: #d4f1f9; /* Water */
     float: middle;
     border: none;
-    border-radius: 12%;
+    border-radius: 5%;
     outline: none;
     cursor: pointer;
     text-transform: lowercase;
-    padding: 1vh 1vh;
-    transition: 0.3s;
+    padding: .2vh .5vh;
+    transition: 0.5s;
     font-size: 1vw;
+    font-weight: bolder;
     font-family: Major Mono Display, sans-serif;
     flex-wrap: wrap;
 }
@@ -155,7 +180,7 @@ h2, h3, h4, h5, h6 {
     margin: 0 0 0 1.5vw;
 } */
 
-#box1 {
+.homeBox {
     display: inline-block;
     justify-content: space-evenly;
     padding: .5vw;
@@ -163,68 +188,69 @@ h2, h3, h4, h5, h6 {
     text-align: left;
     vertical-align: top;
     max-width: 100%;
-    height: 15vw;
+    height: auto;
 }
 
-#box2 {
+.aboutBox {
     display: inline-block;
     justify-content: space-evenly;
     padding: .5vw;
+    font-size: .95vw;
+    vertical-align: top;
+    width: 18vw;
+    height: auto;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.horizontalBox {
+    display: inline-block;
+    justify-content: space-evenly;
     font-size: 1vw;
     text-align: left;
     vertical-align: top;
     width: 35vw;
-    height: 7vw;
-}
-
-
-#box3 {
-    display: inline-block;
-    justify-content: space-evenly;
-    padding: .5vw;
-    font-size: .95vw;
-    text-align: left;
-    vertical-align: top;
-    width: 18vw;
-    height: 18vw;
-    word-wrap: break-word;
-    overflow: hidden;
-}
-
-#box4 {
-    display: inline-block;
-    justify-content: space-evenly;
-    padding: .5vw;
-    font-size: .95vw;
-    text-align: left;
-    vertical-align: top;
-    width: 13vw;
-    height: 18vw;
-    word-wrap: break-word;
-    overflow: hidden;
-}
-
-#box5 {
-    display: inline-block;
-    justify-content: space-evenly;
-    padding: .5vw;
-    font-size: 1vw;
-    text-align: left;
-    vertical-align: top;
-    width: 15vw;
-    height: 15vw;
-    word-wrap: break-word;
-    overflow: hidden;
-}
-.listbox2, .listbox3, .listbox4, .listbox5 {
-    list-style-type: none;
+    height: auto;
     margin: 0;
+    padding: .5vw;
+}
+
+.verticalBox {
+    display: inline-block;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: .5vw;
+    font-size: .95vw;
+    text-align: left;
+    vertical-align: top;
+    width: 14vw;
+    height: auto;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.bigger {
+    width: 18vw;
+}
+
+.infoList {
+    margin: 1vw;
     padding: 0;
+    list-style-type: none;
+    text-indent: 1vw;
+    font-size: .9vw;
+}
+.bulletList {
+    list-style-type: circle; 
+    font-size: .85em;
+    margin: 1vw;
+}
+.lotsOfInfo {
+    font-size: .7vw;
 }
 
 .location {
     font-size: .8vw;
-    opacity: .8;
+    opacity: .9;
 }
 
 .text {
@@ -243,11 +269,25 @@ h2, h3, h4, h5, h6 {
     color: #1F1E2B;
     text-align: center;
     font-size: 3vh;
-    opacity: .8;
+    opacity: .9;
+}
+
+.foot {
+    display: inline-block;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .myAudio {
     width: 100%;
+}
+
+img.doodle {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: pink;
+    width: 90%;
+    height: auto;
 }
 
 /* Mobile format; stacking */
