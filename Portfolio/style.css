@@ -12,6 +12,7 @@ body {
     animation: gradient 15s ease infinite;
     font-family: Questrial, sans-serif;
     width: 100%;
+    min-width: 800px;
     color: #1F1E2B;
     margin-left: auto;
     margin-right: auto;
