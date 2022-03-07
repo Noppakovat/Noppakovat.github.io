@@ -1,0 +1,242 @@
+<!--Subject to change-->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!--Meta data-->
+    <meta charset="utf-8">
+    <meta name="Narinee Rita Noppakovat" content="CV, Curriculum Vitae, Portfolio">
+    <!--Title of tab-->
+    <title>Narinee's Portfolio</title>
+    <!--Style sheets used, icon references, etc.-->
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="image/x-icon" href="rita2.png">
+    <!--Theme-->
+    <link href="style.css" rel="stylesheet" id="theme">
+</head>
+<!--Content information-->
+<body>
+    <div class="w3-container w3-center">
+    
+        <h1 class="topheader">Hello, I'm Rita!</h1>
+        
+        <div id="MainContent" class="content">
+            <p>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'About')" id="showOnOpen">About</button>
+                <button class="tablinks" onclick="openTab(event, 'Skillset')">Skillset</button>
+                <button class="tablinks" onclick="openTab(event, 'Experience')">Experience</button>
+                <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+                <button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
+            </div>
+            </p>
+
+        <section id="about">
+            <div id="About" class="tabcontent">
+                <!--<img src="rita.png" id="ritaChibi">-->
+                <div id="box1">
+                    <p>
+                        Hey!
+                        <!--Lemon meringue span-->
+                            <br>Welcome~ My name is <span style="background-color: #f6eabe;">Narinee Noppakovat</span>, but I prefer to go by <span>Rita</span>. 🙂
+                            <br>Pleasure to <i>greet</i> you! <span>Feel free to inquire about my resume/CV.</span>
+                            <br><span style="opacity: .7; font-size: .8em;">Hope you enjoy your stay!</span>
+                    </p>
+                    <i style="font-size: small; opacity:.7;">Current favorite song:</i>
+                    
+                    <br>
+
+                    <audio controls autoplay="true" volume="0.1">
+                        <source src="Ketsa - Falling Angels.mp3" type="audio/mpeg" id="myAudio" class="myAudio">
+                        Your browser does not support the audio tag.
+                    </audio>
+                    <h5>"<span style="font-weight: bold;">Falling Angels</span>" by <a href="https://ketsamusic.com/">Ketsa</a></h5>
+                </div>
+            </div>
+        </section>
+
+        <section id="skillset">
+            <div id="Skillset" class="tabcontent">
+                    <div id="box2">
+                        <h3><span>Technical</span></h3>
+                        <ul class="listbox2" style="font-size: .85em;">
+                            <li><span>Languages:</span> HTML, CSS, JavaScript, Java, C#</li>
+                            <li><span>Operating Environment:</span> Windows 10</li>
+                            <li><span>Business Tools:</span> Internet Applications, Microsoft Office Suite, Visual Studio 2022</li>
+                            <li><span>Typing Speed:</span> ~120 WPM, 98%</li>
+                        </ul>
+                    </div>
+
+                    <br><br>
+
+                    <div id="box2">
+                        <h3><span>Other</span></h3>
+                        <ul style="list-style-type: circle; font-size: .85em;">
+                            <li>Proofreading and Editing</li>
+                            <li>Attention to Detail</li>
+                            <li>Interpersonal Communication</li>
+                            <li>Conflict Resolution</li>
+                            <li>Process Monitoring</li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div id="Experience" class="tabcontent">
+                    <div id="box3">
+                        <ul class="listbox3">
+                            <li><h3><span>Title Service Runner</span></h3></li>
+                            <li><h4>MAY 2019 - AUG 2021</h4></li>
+                            <li class="location">Title Support Services</li>
+                            <li class="location">Seattle, WA</li>
+                        </ul>
+                        <ul style="list-style-type: circle; font-size: .7em;">
+                            <li>Established and maintained strong connections with at least 10 title companies weekly</li>
+                            <li>Checked in with supervisor(s) weekly to assure companies' needs were met</li>
+                            <li>Processed documents given by title companies for recording and filing purposes</li>
+                            <li>Handled checks regarding property and mobile home payments</li>
+                            <li>Retrieved, scanned, and emailed certified/uncertified documents utilizing computer directories or microfiche readers</li>
+                        </ul>
+                    </div>
+
+                    <div id="box3">
+                        <ul class="listbox3">
+                            <li><h3><span>Peer/Specialty Tutor</span></h3></li>
+                            <li><h4>JUL 2013 - APR 2019</h4></li>
+                            <li class="location">Pierce College Tutoring Center</li>
+                            <li class="location">Lakewood, WA</li>
+                        </ul>
+                        <ul style="list-style-type: circle; font-size: .7em;">
+                            <li>Provided students guidance on how to take effective notes</li>
+                            <li>Nurtured study techniques within students based on material</li>
+                            <li>Encouraged academic integrity and supported capabilities</li>
+                            <li>Reinforced visual and kinesthetic learning through repetition</li>
+                            <li>Alleviated confusion through use of Socratic method</li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div id="Projects" class="tabcontent">
+                <div id="box4">
+                        <ul class="listbox4">
+                            <li><h3><span>Front-End Developer</span></h3></li>
+                            <li><h4>JAN 2022 - MAR 2022</h4></li>
+                            <li class="location">University of Washington</li>
+                            <li class="location">Tacoma, WA</li>
+                        </ul>
+                        <ul style="list-style-type: circle; font-size: .7em;">
+                            <li>Collaborated in a group of 6 members to create a website for a restaurant</li>
+                            <li>Communicated and updated restaurant owners with website's progress weekly</li>
+                            <li>Determined general design using HTML, CSS, and JavaScript</li>
+                            <li>Ensured accessibility and easy interaction for web visitors</li>
+                        </ul>
+                </div>
+
+                <div id="box4">
+                        <ul class="listbox4">
+                            <li><h3><span>UX Designer</span></h3></li>
+                            <li><h4>OCT 2021 - DEC 2021</h4></li>
+                            <li class="location">University of Washington</li>
+                            <li class="location">Tacoma, WA</li>
+                        </ul>
+                        <ul style="list-style-type: circle; font-size: .8em;">
+                            <li>Documented user experience regarding selected prototype</li>
+                            <li>Performed interviews and observations</li>
+                            <li>Designed and sketched various prototypes</li>
+                        </ul>
+                </div>
+
+                <div id="box4">
+                        <ul class="listbox4">
+                            <li><h3><span>Web Developer</span></h3></li>
+                            <li><h4>OCT 2021 - DEC 2021</h4></li>
+                            <li class="location">University of Washington</li>
+                            <li class="location">Tacoma, WA</li>
+                        </ul>
+                        <ul style="list-style-type: circle; font-size: .8em;">
+                            <li>Integrated Agile methodology and SDLC</li>
+                            <li>Constructed a forum website for use</li>
+                            <li>Implemented a use case diagram and flow chart</li>
+                        </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div id="Education" class="tabcontent">
+                <div id="box2">
+
+                    <div id="box2">
+                        <h3><span>Bachelor of Science</span></h3>
+                        <ul class="listbox2" style="font-size: .85em;">
+                            <li>Expected JUN 2023</li>
+                            <li><h4>Information Technology</h4></li>
+                            <li><h6>Minor in Mathematics</h6></li>
+                            <li class="location">University of Washington</li>
+                            <li class="location">Tacoma, WA</li>
+                        </ul>
+                    </div>
+
+                    <br><br>
+
+                    <div id="box2">
+                        <h3><span>Associate of Science</span></h3>
+                        <ul class="listbox2" style="font-size: .85em;">
+                            <li>2018</li>
+                            <li><h4>Track-II</h4></li>
+                            <li class="location">Pierce College</li>
+                            <li class="location">Lakewood, WA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--Beneath tabs-->            
+        </div>
+        </section>
+
+    </div>
+    <div class="footer">
+
+            <a href="mailto:narinee@outlook.com" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/apple-mail.png"></a>
+            <a href="https://github.com/Noppakovat" title="Github" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/github.png"></a> 
+            <a href="https://www.linkedin.com/in/noppakovat/" title="LinkedIn" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png"></a> 
+            <a href="https://discordhub.com/profile/123627323336425478" title="Discord" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/discord-logo.png"></a> 
+            <a href="https://instagram.com/kritacism" title="Instagram" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/instagram-new--v2.png"></a> 
+            
+            <span style="font-size: .5em; padding-left: 1.5em;">
+            Portfolio & Favicon &#169; Narinee Rita Noppakovat, 2022 | Audio &#169; <a href="https://freemusicarchive.org/music/Ketsa">Ketsa</a> on <a href="https://freemusicarchive.org/music/Ketsa/equinox-rising/falling-angels">Free Music Archive</a> | Application Icons &#169; <a href="https://icons8.com/">Icons8</a> ❤</span>
+
+            <a href="Rita's Resume.pdf" title="Resume" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/download.png"/></a>
+    </div>
+<!--JavaScript-->
+<script>
+// Tabs
+function openTab(evt, topicName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) 
+    {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) 
+    {
+        tablinks[i].className = tablinks[i].className.replace("active", "");
+    }
+    document.getElementById(topicName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Audio
+var audio = document.createElement("myAudio");
+console.log(audio.volume); // 1
+audio.volume = 0.2;
+
+// Displays whatever's id is showOnOpen on load
+document.getElementById("showOnOpen").click();
+</script>
+</body>
+</html>
