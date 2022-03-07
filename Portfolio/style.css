@@ -250,7 +250,7 @@ h2, h3, h4, h5, h6 {
 }
 
 /* Mobile format; stacking */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 680px) {
     #MainContent {
         width: 100%;  
     }
