@@ -1,0 +1,259 @@
+<!--Subject to change-->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!--Meta data-->
+    <meta charset="utf-8">
+    <meta name="Narinee Rita Noppakovat" content="CV, Curriculum Vitae, Portfolio">
+    <!--Title of tab-->
+    <title>Rita's Portfolio</title>
+    <!--Style sheets used, icon references, etc.-->
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="image/x-icon" href="rita2.png">
+    <!--Theme-->
+    <link href="style.css" rel="stylesheet" id="theme">
+</head>
+<!--Content information-->
+<body>
+    <h1 class="topHead">Hello, I'm Rita!</h1>
+    <div class="w3-container w3-center">
+        <div id="MainContent" class="content">
+            <div class="tab">
+                <p>
+                    <nav>
+                        <a href="mailto:narinee@outlook.com" title="E-Mail" target="_blank"><img src="https://img.icons8.com/nolan/25/  send-mass-email.png"></a>
+                        <a href="https://github.com/Noppakovat" title="Github" target="_blank"><img src="https://img.icons8.com/nolan/25/github.png"></a> 
+                        <a href="https://www.linkedin.com/in/noppakovat/" title="LinkedIn" target="_blank"><img src="https://img.icons8.com/nolan/25/linkedin.png"></a> 
+                        <a href="https://discordhub.com/profile/123627323336425478" title="Discord" target="_blank"><img src="https://img.icons8.com/nolan/25/discord.png"></a> 
+                        <a href="https://instagram.com/kritacism" title="Instagram" target="_blank"><img src="https://img.icons8.com/nolan/25/instagram-new.png"></a> 
+                        <a href="Rita's Resume.pdf" title="Resume" target="_blank"><img src="https://img.icons8.com/nolan/25/open-resume.png"></a>
+                    </nav>
+                </p>
+                <button class="tabLinks" onclick="openTab(event, 'Home')" id="showOnOpen">Home</button>
+                <button class="tabLinks" onclick="openTab(event, 'About')">About</button>
+                <button class="tabLinks" onclick="openTab(event, 'Skills')">Skills</button>
+                <button class="tabLinks" onclick="openTab(event, 'Experience')">Experience</button>
+                <button class="tabLinks" onclick="openTab(event, 'Projects')">Projects</button>
+                <button class="tabLinks" onclick="openTab(event, 'Education')">Education</button>
+                <footer style="position: absolute; bottom: 0; font-size: .5vw;">
+                    Portfolio & Favicon &#169; Narinee Rita Noppakovat, 2022
+                    <br>Application Icons &#169; <a href="https://icons8.com/">Icons8</a> ❤
+                </footer>
+            </div>
+        <section id="home">
+            <div id="Home" class="tabContent">
+                <!--<img src="rita.png" id="ritaChibi">-->
+                <div class="homeBox">
+                    <p>
+                        <h2><span class="spanPurpleBold" style="font-weight: bolder;">Hey</span> & welcome! <span style="opacity: .75;">Pleasure to <i>greet</i> you~</span></h2>
+                    </p>
+                    <p>
+                        My name is <span class="spanPurpleBold" style="background-color: #f6eabe;">Narinee Noppakovat</span> (phonetically: NAH ruh NEE -- NO puh go WAH).
+                        <br>I do, however, prefer to go by "<span style="font-weight: bolder;">Rita</span>"" (as seen in the above header).
+                        <br><span class="spanPurpleBold" style="opacity: .75;">Here, you can learn about me, my skills, experience, projects, & education.
+                        <br>I may even implement more things in the future, but who knows?</span>
+                        <br>To the top-left, I've also included links to how we can connect!
+                    </p>
+                    <p>
+                        <span style="font-weight: bolder; opacity: .9;">Feel free to inquire about my resume/CV.</span>
+                        <br>I hope you enjoy your stay! 🙂
+                        <br><span class="spanPurpleBold" style="opacity: .7; font-size: 1.1em;">Thanks for browsing~</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div id="About" class="tabContent">
+                <!--<img src="rita.png" id="ritaChibi">-->
+                <div class="leftAboutBox">
+                    <p style="text-align: center;">
+                        <img class="doodle" src="ritaselfie2.jpg" title="Hello, world!">
+                        <br><span class="spanPurpleBold" class="abouttitle" style="font-size: 1.1vw; opacity: .7;">Data Analyst</span>
+                        <br><span style="position: relative; top: -.8vw; font-size: .6vw;"><i>(interest is subject to change)</i></span>
+                    </p>
+                    <ul class="aboutInfoList">
+                            <li><span style="opacity: .8;">Artsy Cat Mom 🐱‍💻</span></li>
+                            <li><b>MBTI:</b> INFJ-T <span style="opacity: .7; font-size: .6vw;">(72%, 72%, 77%, 76%, 78%)</span></li>
+                            <li><span class="indent">
+                            &#10023; <a href="https://www.16personalities.com/articles/roles-diplomats" target="_blank">Role</a></span></li>
+                            <li><span class="indent">
+                            &#10023; <a href="https://www.16personalities.com/articles/strategies-constant-improvement" target="_blank">Strategy</a></span></li>
+                            <li><b>Enneagram:</b> Type 4 Wing 5</li>
+                            <li>Thai & Chinese</li>
+                            <li>Born in TX | Raised in WA</li>
+                    </ul>
+                </div>
+                <div class="rightAboutBox" style="text-align: left;">
+                    <p><span class="indent">I've always had a <span style="background-color: #f6eabe;">passion for helping people</span> & an even more <span style="background-color: #f6eabe;">sizable fondness for meaningful connection(s)</span>. Whether that fondness be relational or not, I suppose it depends on the context. To add on a somewhat relevant note, I've also thoroughly enjoyed mathematics (hence the minor)... and I believe this is where my love for data comes into play. It's almost like a bridge between multiple aspects, or at least that's what I'd like to think. 😅
+                    </span></p>
+                    <p><span class="indent">In my spare time, I either indulge in: (1) video games, (2) doodling, (3) deep cleaning, or (4) researching how random things work (e.g. certain mathematical equations regarding Calculus & above).</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div id="Skills" class="tabContent">
+                    <div class="horizontalBox">
+                        <h3 class="boxHeader">Technical</h3>
+                        <ul class="infoList">
+                            <li><b>Languages:</b> HTML, CSS, JavaScript, Java, C#</li>
+                            <li><b>Operating Environment:</b> Windows 10</li>
+                            <li><b>Tools:</b> Internet Applications, Microsoft Office Suite, Visual Studio 2022</li>
+                            <li><b>Typing Speed:</b> ~120 WPM, 98% accuracy</li>
+                        </ul>
+                    </div>
+
+                    <div class="horizontalBox">
+                        <h3 class="boxHeader">Other</h3>
+                        <ul class="bulletList">
+                            <li>Proofreading and Editing</li>
+                            <li>Attention to Detail</li>
+                            <li>Interpersonal Communication</li>
+                            <li>Conflict Resolution</li>
+                            <li>Process Monitoring</li>
+                            <li>Organization</li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div id="Experience" class="tabContent">
+                    <div class="horizontalBox">
+                        <h3 class="boxHeader">Title Service Runner</h3>
+                            <ul class="infoList">
+                                <li>MAY 2019 - AUG 2021</li>
+                                <li class="location">Title Support Services</li>
+                                <li class="location">Seattle, WA</li>
+                            </ul>
+                            <ul class="bulletList">
+                            <li>Established & maintained strong connections with at least 10 title companies weekly</li>
+                                <li>Checked in with supervisor(s) weekly to assure companies' needs were met</li>
+                                <li>Processed documents given by title companies for recording & filing purposes</li>
+                                <li>Handled checks regarding property & mobile home payments</li>
+                                <li>Retrieved, scanned, & emailed certified/uncertified documents utilizing computer directories or microfiche readers</li>
+                            </ul>
+                    </div>
+
+                    <div class="horizontalBox">
+                        <h3 class="boxHeader">Peer/Specialty Tutor</h3>
+                            <ul class="infoList">
+                                <li>JUL 2013 - APR 2019</li>
+                                <li class="location">Pierce College Tutoring Center</li>
+                                <li class="location">Lakewood, WA</li>
+                            </ul>
+                            <ul class="bulletList">
+                                <li>Provided students guidance on how to take effective notes</li>
+                                <li>Nurtured study techniques within students based on material</li>
+                                <li>Encouraged academic integrity & supported capabilities</li>
+                                <li>Reinforced visual & kinesthetic learning through repetition</li>
+                                <li>Alleviated confusion through use of Socratic method</li>
+                            </ul>
+                    </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div id="Projects" class="tabContent">
+                    <div class="horizontalBox">
+                        <h3 class="boxHeader">Front-End Developer</h3>
+                            <ul class="infoList">
+                                <li>JAN 2022 - MAR 2022</li>
+                                <li class="location">University of Washington</li>
+                                <li class="location">Tacoma, WA</li>
+                            </ul>
+                            <ul class="bulletList">
+                                <li>Collaborated in a group of 6 members to create a website for a restaurant</li>
+                                <li>Communicated & updated restaurant owners with website's progress weekly</li>
+                                <li>Determined general design using HTML, CSS, & JavaScript</li>
+                                <li>Ensured accessibility & easy interaction for web visitors</li>
+                            </ul>
+                    </div>
+
+                    <div class="horizontalBox">
+                        <h3 class="boxHeader">UX Designer</h3>
+                            <ul class="infoList">
+                                <li>OCT 2021 - DEC 2021</li>
+                                <li class="location">University of Washington</li>
+                                <li class="location">Tacoma, WA</li>
+                            </ul>
+                            <ul class="bulletList">
+                                <li>Documented user experience regarding selected prototype</li>
+                                <li>Performed interviews & observations</li>
+                                <li>Designed & sketched various prototypes</li>
+                            </ul>
+                    </div>
+
+                    <div class="horizontalBox">
+                        <h3 class="boxHeader">Web Developer</h3>
+                            <ul class="infoList">
+                                <li>OCT 2021 - DEC 2021</li>
+                                <li class="location">University of Washington</li>
+                                <li class="location">Tacoma, WA</li>
+                            </ul>
+                            <ul class="bulletList">
+                                <li>Integrated Agile methodology & SDLC</li>
+                                <li>Constructed a forum website for use</li>
+                                <li>Implemented a use case diagram & flow chart</li>
+                            </ul>
+                    </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div id="Education" class="tabContent">
+                <div class="horizontalBox">
+                    <h3 class="boxHeader">Bachelor of Science</h3>
+                    <ul class="infoList">
+                        <li>Expected JUN 2023</li>
+                        <li>Information Technology</li>
+                        <li>Minor in Mathematics</li>
+                        <li class="location">University of Washington</li>
+                        <li class="location">Tacoma, WA</li>
+                    </ul>
+                </div>
+
+                <div class="horizontalBox">
+                    <h3 class="boxHeader">Associate of Science</h3>
+                    <ul class="infoList">
+                        <li>2018</li>
+                        <li>Track-II</li>
+                        <li class="location">Pierce College</li>
+                        <li class="location">Lakewood, WA</li>
+                    </ul>
+                </div>
+            </div>
+            <!--Beneath tabs-->
+        </section>
+    </div>
+<!--JavaScript-->
+<script>
+// Tabs
+function openTab(evt, topicName) {
+    var i, tabContent, tabLinks;
+    tabContent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabContent.length; i++) 
+    {
+        tabContent[i].style.display = "none";
+    }
+    tabLinks = document.getElementsByClassName("tabLinks");
+    for (i = 0; i < tabLinks.length; i++) 
+    {
+        tabLinks[i].className = tabLinks[i].className.replace("active", "");
+    }
+    document.getElementById(topicName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Audio
+var audio = document.createElement("myAudio");
+console.log(audio.volume); // 1
+audio.volume = 0.2;
+
+// Displays whatever's id is showOnOpen on load
+document.getElementById("showOnOpen").click();
+</script>
+</body>
+</html>
