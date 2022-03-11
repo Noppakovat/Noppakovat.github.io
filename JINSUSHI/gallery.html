@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!--Meta info-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="JIN SUSHI" content="Japanese Restaurant, Sushi, Sashimi, Ramen">
+    <title>JIN SUSHI | Japanese Restaurant</title>
+    <!--CSS sheet reference-->
+    <link href="menustyle.css" rel="stylesheet">
+    <!--Favicon displayed on tab-->
+    <link rel="icon" type="image/x-icon" href="JinSushiFavicon.png">
+    <!--Icon references-->
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <!--Font references-->
+    <!--Marcellus for headers, Poiret One for main font, Ubuntu for buttons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marcellus|Handlee|Ubuntu"> 
+</head>
+<style>
+#gallery {
+   line-height:0;
+   -webkit-column-count:5; /* split it into 5 columns */
+   -webkit-column-gap:5px; /* give it a 5px gap between columns */
+   -moz-column-count:5;
+   -moz-column-gap:5px;
+   column-count:5;
+   column-gap:5px;
+   height: 70%;
+   width: 80%;
+   overflow-y: scroll;
+}
+#gallery img {
+   width: 80% !important;
+   height: auto !important;
+   margin-bottom: .3vw; /* to match column gap */
+   border-radius: 20%;
+}
+@media (max-width: 1200px) {
+   #gallery {
+    -moz-column-count:    4;
+    -webkit-column-count: 4;
+    column-count:         4;
+   }
+}
+@media (max-width: 1000px) {
+   #gallery {
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
+   }
+}
+@media (max-width: 800px) {
+   #gallery {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+   }
+}
+@media (max-width: 400px) {
+   #gallery {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+   }
+}
+</style>
+<body>
+<!--Main body-->
+<div class="row">
+  <!--Left side panel-->
+  <div class="col-3 menu" align="center">
+    <br></br>
+    <!--Logo-->
+    <a href="index.html" alt="Jin Sushi Homepage"><img class="Logo" src=".\Images\JinSushiLogo.png" title="Home"></a>
+    <br></br>
+    <!--Buttons-->
+    <ul>
+      <p>
+      <li>
+        <a href="index.html"><button class="button"><span>Home</span></button></a>
+      </li>
+      <li>
+        <a href="menu.html"><button class="button"><span>Menu</span></button></a>
+      </li>
+      <li>
+        <a href="contact.html"><button class="button"><span>Contact Us</span></button></a>
+      </li>
+      </p>
+      <!--Small note-->
+      <p>
+      <small>Gift certificates are available.</small>
+      </p>
+    </ul>
+  </div>
+  <div class="col-6" align="center" style="height: 650px;">
+    <table width="300px" style="text-align: center;"><tr><td colspan="2"><h1><a class="icon" href="menu.html">«</a></h1></td> <td><h1>Gallery</h1></td> <td colspan="2"><h1><a class="icon" href="contact.html">»</a></h1></td></tr></table>
+    <p>
+      <div id="gallery">
+        <img src=".\Food Images\albacoredelight.jpg" title="Albacore Delight">
+        <img src=".\Food Images\bakedlobster.jpg" title="Baked Lobster">
+        <img src=".\Food Images\beefteriyaki.jpg" title="Beef Teriyaki">
+        <img src=".\Food Images\crunchyscalloproll.jpg" title="Crunchy Scallop Roll">
+        <img src=".\Food Images\doublesalmon.jpg" title="Double Salmon">
+        <img src=".\Food Images\Hawaiian.jpg" title="Hawaiian">
+        <img src=".\Food Images\mochiicecream.jpg" title="Mochi Ice Cream">
+        <img src=".\Food Images\platter.jpg" title=""Platter>
+        <img src=".\Food Images\popcornlobster.jpg" title="Popcorn Lobster">
+        <img src=".\Food Images\reddragon.jpg" title="Red Dragon">
+        <img src=".\Food Images\sashimismall.jpg" title="Sashimi">
+        <img src=".\Food Images\shumai.jpg" title="Shumai">
+        <img src=".\Food Images\softshellcrabapp.jpg" title="Soft-Shell Crab Appetizer">
+        <img src=".\Food Images\spicycrabmeatcutroll.jpg" title="Spicy Crab Meat Cut Roll">
+        <img src=".\Food Images\sunset.jpg" title="Sunset">
+        <img src=".\Food Images\tonkatsuramen.jpg" title="Tonkatsu Ramen">
+        <img src=".\Food Images\udon.jpg" title="Udon">
+        <img src=".\Food Images\yellowtaildelight.jpg" title="Yellowtail Delight">
+      </div>
+    </p>
+    <p>
+      Hover over an image for the menu item name.
+    </p>
+  </div>
+  <br></br>
+    <div class="col-3 right">
+    <div class="aside" align="center">  
+        <!--Icons for related media & delivery apps-->
+        <font size="4">
+        <a class="icon" href="mailto:Jinzhe1028@gmail.com">
+          <span class="iconify" data-icon="dashicons:email"></span>
+        </a>ㅤ
+        <a class="icon" href="https://www.yelp.com/biz/jin-sushi-lakewood" target="_blank">
+          <span class="iconify" data-icon="simple-icons:yelp"></span>
+        </a>ㅤ
+        <a class="icon" href="https://www.facebook.com/pages/category/Sushi-Restaurant/Jin-sushi-restaurant-lakewood-826892357434921/" target="_blank">
+          <span class="iconify" data-icon="simple-icons:facebook"></span>
+        </a>
+        <!--<a class="icon" href="https://www.grubhub.com/restaurant/jin-sushi-8904-s-tacoma-way-lakewood/1579388?" target="_blank">
+          <span class="iconify" data-icon="simple-icons:grubhub"></span></a>-->ㅤ
+        <a class="icon" href="https://www.ubereats.com/store/jin-sushi/JBOrIBf4RKuSlpzYKz4WLQ" target="_blank"><span class="iconify" data-icon="simple-icons:ubereats"></span>
+        </a>ㅤ
+        <a class="icon" href="https://www.doordash.com/store/jin-sushi-lakewood-956990/" target="_blank">
+          <span class="iconify" data-icon="simple-icons:doordash"></span>
+        </a>
+        </font>
+      <p>
+        <!--Restaurant information-->
+        <p>
+          <h3>Hours</h3>
+        </p>
+        <p class="info">
+          <b>Monday to Friday</b>
+          <br>11:00AM - 3:00PM</br>
+              4:30PM - 9:30PM
+        </p>
+        <p class="info">
+          <b>Saturday</b>
+          <br>12:00PM - 3:00PM</br>
+              4:30 - 9:30PM
+        </p>
+        <p class="info">
+          <b>Sunday</b>
+          <br>Closed</br>
+        </p>
+      </p>
+      <hr width="50%" style="opacity: .15;"></hr>
+      <p>
+        <h3>Address</h3>
+        8904 S Tacoma Way #3-4
+        <br>Lakewood, WA 98499</br>
+      </p>
+      <hr width="50%" style="opacity: .15;"></hr>
+      <p>
+        <h3>Phone</h3>
+        &#8481; <a href="tel:2538444898" style="color: #D1B5B5;">(253) 844-4898</a>
+      </p>
+      <footer style="position: relative; width: 100%;">
+          <!--Copyright data, authors, etc.-->
+          <small>Images belong to Henry W.
+          <br>Logo & site &#169; JIN SUSHI 2022</br></small>
+      </footer>
+    </div>
+  </div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,270 @@
+/* Body styling; animation on page load */
+html {
+  font-family: 'Handlee', serif;
+  font-size: 18px;
+}
+body {
+  animation: gradient 5s ease infinite;
+  background-color: #200101;
+  background: linear-gradient(45deg,  #4A0404, #480607, #100C08, #000000);
+  background-size: 200% 200%;
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 80%;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Text color when highlighted */
+::selection { 
+  color: #F2A526; 
+}
+/* General text styling */
+h3 {
+  font-family: Marcellus, serif;
+}
+.title2 {
+  border-radius: 25px;
+  width: 75%;
+}
+p.intro::first-letter {
+  color: #D19B9B;
+  font-size: xx-large;
+}
+p.info::first-line {
+  color: #935353;
+  font-variant: small-caps;
+}
+/* Link styling */
+a.icon:link {
+  background-color: transparent;
+  color: #8F2B2B;
+  text-decoration: none;
+}
+a.icon:visited {
+  background-color: transparent;
+  color: #FF2B2B;
+  text-decoration: none;
+}
+a.icon:hover {
+  background-color: transparent;
+  color: #611C1C;
+  text-decoration: none;
+}
+a.icon:active {
+  background-color: transparent;
+  color: #ED2F23;
+  text-decoration: none;
+}
+/* Scroll bar */
+/* Width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+  box-shadow: inset 0 0 10px black; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3E0E0E; 
+  border-radius: 0px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #230505; 
+}
+/* Layout formatting */
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+[class*="col-"] {
+  color: white;
+  float: left;
+  padding: 15px;
+  padding-top: 25px;
+}
+.header {
+  background-color: #0D0101;
+  color: #ffffff;
+  font-family: Marcellus, serif;
+  padding-top: 20px;
+  text-shadow: 1px 1px 2px black, 0 0 25px #8F2B2B;, 0 0 5px darkred;
+}
+.menu ul {
+  background-color: #0D0101;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5), 0 3px 10px 0 rgba(0,0,0,0.8);
+  color: #ffffff;
+  font-family: 'Handlee', serif;
+  font-size: 14px;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+  padding-top: 10px;
+  text-align: center;
+}
+button.button {
+  border-radius: 5px;
+  background-color: #8F2B2B; /* Lighter red */
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5), 0 3px 10px 0 rgba(0,0,0,0.8);
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ubuntu', Courier New;
+  font-size: 1.5vw;
+  padding: 1vw;
+  text-shadow: 2px 2px 5px black;
+  transition-duration: .3s;
+  width: 80%;
+  vertical-align:middle;
+}
+button.button:hover {
+  background-color: #611C1C; /* Darker red */
+  color: white;
+}
+.button {
+  transform: skew(10deg);
+}
+/* Button animations */
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+.button span:after {
+  content: '\1F962';
+  opacity: 0;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  transition: 0.3s;
+}
+.button:hover span {
+  padding-right: 30px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* Middle menu buttons */
+.button2 {
+  border-radius: 5px;
+  background-color: #3E1111; /* Lighter red */
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5), 0 3px 10px 0 rgba(0,0,0,0.8);
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ubuntu', Courier New;
+  font-size: 20px;
+  padding: 4px;
+  text-shadow: 2px 2px 5px black;
+  transition-duration: .3s;
+  vertical-align:middle;
+  width: 60%;
+}
+.button2:hover {
+  background-color: #611C1C; /* Darker red */
+  color: white;
+}
+/* Button animations */
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+}
+.button2 span:after {
+  content: '\2199';
+  opacity: 0;
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  transition: 0.2s;
+}
+.button2:hover span {
+  padding-right: 15px;
+}
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* Left & right panels */
+.col-6 {
+  background-color: #0D0101;
+  border-radius: 12px;
+  box-shadow: 0px 10px #130403;
+  padding: 10px; 
+}
+.aside {
+  background-color: #0D0101;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5), 0 3px 10px 0 rgba(0,0,0,0.8);
+  color: #ffffff;
+  font-size: 14px;
+  padding: 15px;
+  text-align: center;
+}
+/* Footer */
+footer {
+  background-color: #180202;
+  color: #ffffff;
+  font-size: 12px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  max-width: 100%;
+}
+/* Desktop format */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* Mobile format; stacking */
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+/* Image/video editing */
+video {
+  max-width: 80%;
+  opacity: 0.5;
+}
+img.Logo {
+  border-radius: 150px;
+  height: auto;
+  max-width: 60%;
+  opacity: 0.8;
+}
+img.Roll {
+  display: block;
+  margin: auto;
+  max-width: 70%;
+  opacity: 0.7;
+}
